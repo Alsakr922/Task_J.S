@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="css/all.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css.map"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+</head>
+<body>
+    
+    <header class="sticky-top bg-info text-white p-3 row" style="min-height: 70px;">
+        <div id="product" class="products col-12  col-lg-8"></div>
+        <div class=" col-12 col-lg-2">
+            <div id="pricediv" class="price "></div>
+            <div id="oldpricediv" class="old-price text-danger" style="text-decoration: line-through;"></div>
+        </div>
+        <div class=" col-12 col-lg-2 text-center">
+            <div id="totalpricediv" class="price text-dark fs-2 col-2 mx-auto my-3"></div>
+            <button class="btn btn-outline-secondary mx-auto" style="display:none ;" id="pricebtn">Show price</button>
+        </div>
+
+    </header>
+
+<section class="py-5">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-4 col-lg-3 bg-light rounded card my-2">
+        <div class="box text-center card-body">
+            <img src="./Images/prodect-1.jpg " class="img-fluid card-img-top py-4 my-3" alt="">
+            <div class="content">
+                <h2 class="product-h2 py-2 card-title" style="cursor: pointer;">Radley</h2>
+                <p class="product-p card-text">Ladies Radley Watch RY2950A</p>
+                <del   id="oldprice" class="product-oldprice px-3">110.00 $</del>
+                <span" id="price" class="product-price">83.00 $</span>
+            </div>
+            <button href="" oldprice="110"  price="83" id="buy-btn" name="Radley" class="btn btn-outline-secondary py-2 px-5 my-3">Buy</button>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-3 bg-light rounded card my-2">
+        <div class="box text-center card-body">
+            <img src="./Images/prodect-2.jpg " class="img-fluid card-img-top py-4 my-3" alt="">
+            <div class="content">
+                <h2 class="product-h2 py-2 card-title" style="cursor: pointer;">BOSS</h2>
+                <p class="product-p card-text">Mens BOSS Santiago Two Tone</p>
+                <del   id="oldprice" class="product-oldprice px-3">340.00 $</del>
+                <span  id="price" class="product-price">272.00 $</span>
+            </div>
+            <button href="" oldprice="340" price="272" id="buy-btn" name="BOSS" class="btn btn-outline-secondary py-2 px-5 my-3">Buy</button>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-3 bg-light rounded card my-2">
+        <div class="box text-center card-body">
+            <img src="./Images/prodect-3.jpg " class="img-fluid card-img-top py-4 my-3" alt="">
+            <div class="content">
+                <h2 class="product-h2 py-2 card-title" style="cursor: pointer;">Vivienne</h2>
+                <p class="product-p card-text">Ladies Vivienne Westwood Orb Watch</p>
+                <del   id="oldprice" class="product-oldprice px-3">180.00 $</del>
+                <span  id="price" class="product-price">135.00 $</span>
+            </div>
+            <button href="" oldprice="180" price="135" id="buy-btn" name="Vivienne" class="btn btn-outline-secondary py-2 px-5 my-3">Buy</button>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-3 bg-light rounded card my-2">
+        <div class="box text-center card-body">
+            <img src="./Images/prodect-4.jpg " class="img-fluid card-img-top py-4 my-3" alt="">
+            <div class="content">
+                <h2 class="product-h2 py-2 card-title" style="cursor: pointer;">Tissot</h2>
+                <p class="product-p card-text">Mens Tissot Automatic Watch</p>
+                <del   id="oldprice" class="product-oldprice px-3">550.00 $</del>
+                <span  id="price" class="product-price">407.00 $</span>
+            </div>
+            <button href="" price="407"  oldprice="550" id="buy-btn" name="Tissot" class="btn btn-outline-secondary py-2 px-5 my-3">Buy</button>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-3 bg-light rounded card my-2">
+        <div class="box text-center card-body">
+            <img src="./Images/prodect-5.jpg " class="img-fluid card-img-top py-4 my-3" alt="">
+            <div class="content">
+                <h2 class="product-h2 py-2 card-title" style="cursor: pointer;">Bering</h2>
+                <p class="product-p card-text">Gents Bering Solar Watch 15439-402</p>
+                <del   id="oldprice" class="product-oldprice px-3">130.00 $</del>
+                <span  id="price" class="product-price">92.00 $</span>
+            </div>
+            <button href="" price="92" oldprice="130" id="buy-btn" name="Bering" class="btn btn-outline-secondary py-2 px-5 my-3">Buy</button>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-3 bg-light rounded card my-2">
+        <div class="box text-center card-body">
+            <img src="./Images/prodect-6.jpg " class="img-fluid card-img-top py-4 my-3" alt="">
+            <div class="content">
+                <h2 class="product-h2 py-2 card-title" style="cursor: pointer;">Coash</h2>
+                <p class="product-p card-text">Coach Ladies Carnation Watch</p>
+                <del   id="oldprice" class="product-oldprice px-3">600.00 $</del>
+                <span  id="price" class="product-price">476.00 $</span>
+            </div>
+            <button href="" price="476" oldprice="600" id="buy-btn" name="Coach" class="btn btn-outline-secondary py-2 px-5 my-3">Buy</button>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-3 bg-light rounded card my-2">
+        <div class="box text-center card-body">
+            <img src="./Images/prodect-7.jpg " class="img-fluid card-img-top py-4 my-3" alt="">
+            <div class="content">
+                <h2 class="product-h2 py-2 card-title" style="cursor: pointer;">Mondaine</h2>
+                <p class="product-p card-text">Ladies Mondaine Classic White</p>
+                <del   id="oldprice" class="product-oldprice px-3">220.00 $</del>
+                <span  id="price" class="product-price">167.00 $</span>
+            </div>
+            <button href="" id="buy-btn" price="167" oldprice="220" name="Mondaine" class="btn btn-outline-secondary py-2 px-5 my-3">Buy</button>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-3 bg-light rounded card my-2">
+        <div class="box text-center card-body">
+            <img src="./Images/prodect-8.jpg " class="img-fluid card-img-top py-4 my-3" alt="">
+            <div class="content">
+                <h2 class="product-h2 py-2 card-title" style="cursor: pointer;">Emit</h2>
+                <p class="product-p card-text">Unisex Emit Edition Two Watch</p>
+                <del id="oldprice"  class="product-oldprice px-3">730.00 $</del>
+                <span  id="price" class="product-price">585.00 $</span>
+            </div>
+            <button href="" id="buy-btn" price="585" oldprice="730" name="Emit" class="btn btn-outline-secondary py-2 px-5 my-3">Buy</button>
+        </div>
+    </div>
+</div>  <!-- row -->
+</div> <!-- container -->
+</section>
+
+<script  src="js/bootstrap.bundle.min.js"></script>
+<script  src="js/bootstrap.bundle.min.js.map"></script>
+<script  src="js/script.js"></script>
+</body>
+</html>
